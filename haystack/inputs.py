@@ -120,7 +120,7 @@ class AutoQuery(BaseInput):
             else:
                 query_bits.append(Clean(token).prepare(query_obj))
 
-        return u' '.join(query_bits)
+        return u' AND '.join(query_bits)
 
 
 class AltParser(BaseInput):
